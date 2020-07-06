@@ -19,3 +19,8 @@ UserData := DB("base").Table("auth_user").Filter("account_id=? AND type=? AND st
 
 
 最新更新了连接池设置和事务控制
+
+#godblib
+将db.go移到外层，只保留对db的纯封装，优化where的组装过程，添加表连接功能。
+
+目前尚在调试中
